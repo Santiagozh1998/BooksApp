@@ -21,4 +21,11 @@ npm run build
 ```
 
 ## Back setup
+```
+go get ./... && go run main.go
+```
 
+### Compiles and hot-reloads for development
+```
+Change user and password of MongoDB Atlas in main.go
+```
