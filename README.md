@@ -1,9 +1,9 @@
 # BooksApp
 
 ## Deployed app
-```
+
 https://santiagozh1998.github.io/BooksApp/
-```
+
 
 ## Front setup
 ```
