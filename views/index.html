@@ -16,6 +16,7 @@
 
         <div class="container container-books">
             <div class="row">
+                
                 <div class="col col-12 col-lg-4">
                     <div class="card text-center">
                         <div class="card-header">
@@ -45,14 +46,14 @@
                                 <th>Options</th>
                               </tr>
                             </thead>
-                            <tbody v-if="books.length == 0">
+                            <tbody v-if="load == true && books.length == 0">
                                 <tr>
                                   <td>Vacio</td>
                                   <td>Vacio</td>
                                   <td>Vacio</td>
                                 </tr>
                             </tbody>
-                            <tbody v-if="books.length > 0">
+                            <tbody v-if="load == false && books.length > 0">
                                 <tr v-for="element in books">
                                     <td>{{ element.Title }}</td>
                                     <td>{{ element.Author }}</td>
@@ -82,7 +83,7 @@
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

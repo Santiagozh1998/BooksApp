@@ -11,11 +11,11 @@ import (
 )
 
 const (
-	host     = "ec2-34-230-231-71.compute-1.amazonaws.com"
+	host     = ""
 	port     = 5432
-	user     = "fdwzodatvdtkbm"
-	dbname   = "d6a1djhbgfc5a9"
-	password = "c37ce2b337c811b4119984af0c5ee60d19a0e294de897ef974a191c5f4aa9aad"
+	user     = ""
+	dbname   = ""
+	password = ""
 )
 
 var database *gorm.DB

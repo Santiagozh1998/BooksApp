@@ -1,6 +1,7 @@
 const app = new Vue({
     el: '#app',
     data: {
+        load: true,
         errors: [],
         books: [],
         book: {
@@ -15,6 +16,7 @@ const app = new Vue({
         .then(response => {
             console.log(response.data)
             this.books = response.data;
+            this.load = false;
         })
         .catch(error => console.log(error))
     },
